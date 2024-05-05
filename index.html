@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="zh">
 
 <head>
 	<title>Hej,I am Frank!</title>
@@ -12,13 +12,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" type="image/png" href="images/aboutme_img.png">
-
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+
 </head>
 
 <body class="is-preload">
+    <button id="languageButton"style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+
+</button>
 
 	<!-- Wrapper -->
 	<div id="wrapper">
@@ -26,22 +29,24 @@
 		<!-- Header -->
 		<header id="header">
 			<div class="logo">
-				<span class="icon fa-mortar-board "></span>
+				<spac class="icon fa-mortar-board " ></span>
 			</div>
 			<div class="content">
 				<div class="inner">
-					<h1>Hello World!</h1>
-					<p>Hej,我是弗兰克（Frank）,一个<a>工程师</a>、<a>投资人</a>、或者<a> Whatever</a><br />
+					<h1 id="hellowrld">Hello World!</h1>
+
+					<p id="introduction">
+						Hej,我是弗兰克（Frank）,一个<a>工程师</a>、<a>投资人</a>、或者<a> Whatever</a><br />
 						如果你恰好来到我的base地，恰好你也无聊，可以来我找请你喝杯茶~
 				</div>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#intro"><b>关于我</b></a></li>
-					<li><a href="#readinglist"><b>一些推荐</b></a></li>
-					<li><a href="#sharing"><b>一些分享</b></a></li>
-					<li><a href="#arta"><b>一些作品</b></a></li>
-					<li><a href="#contact"><b>联系我</b></a></li>
+					<li><a href="#intro" id="aboutme_title"><b>关于我</b></a></li>
+					<li><a href="#readinglist" id="recommnedlist_title"><b>一些推荐</b></a></li>
+					<li><a href="#sharing" id="sharing_title"><b>一些分享</b></a></li>
+					<!-- <li><a href="#arta"><b>一些作品</b></a></li> -->
+					<li><a href="#contact" id="contact_title"><b>联系我</b></a></li>
 				</ul>
 			</nav>
 		</header>
@@ -51,9 +56,10 @@
 
 			<!-- Intro -->
 			<article id="intro">
-				<h2 class="major">关于我</h2>
+				<h2 class="major" id="aboutme_title">关于我</h2>
 
-				<p>Hej，大家好~我名叫Frank，我的真实姓名就留个悬念，反正它和我的英文名音近（为了图省事）。
+				<p id="intro_details">
+					Hej，大家好~我名叫Frank，我的真实姓名就留个悬念，反正它和我的英文名音近（为了图省事）。
 					<!-- 作为一个刚刚踏入中年旅程的90后，目前为止生活和事业上依旧成少败多，很是惭愧；但是开心的是， -->
 					<!-- 不论生活虐了我多少次，至少到现在为止还没有丧失任何初心。 -->
 				</p>
@@ -67,32 +73,32 @@
 					从事的行业五花八门，总之有点混乱~以下是关于我的一些简单标签： -->
 				</p>
 				<ul>
-					<li><b>星座：</b>白羊座</li>
-					<li><b>家乡：</b>山东青岛市</li>
-					<li><b>经常出没的地区：</b>北京、青岛、无锡、上海、南京</li>
-					<li><b>曾经工作和生活过的国家：</b>新加坡、瑞典、印度、澳大利亚等</li>
-					<li><b>MBTI:</b>EbFJ-A</li>
-					<li><b>曾经的职业：</b>程序员、董秘、投资人、COO</li>
-					<li><b>性格标签：</b>骄傲的90后、热情的白羊座加上深邃的上升天蝎、真诚直率、超级典型的山东人。</li>
+					<li id="constellation"><b>星座：</b>白羊座</li>
+					<li id="hometown"><b>家乡：</b>山东青岛市</li>
+					<li id="hangingplace"><b>经常出没的地区：</b>北京、青岛、无锡、上海、南京</li>
+					<li id="workingplace"><b>曾经工作和生活过的国家：</b>新加坡、瑞典、印度、澳大利亚等</li>
+					<li id="mbit"><b>MBTI:</b>EbFJ-A</li>
+					<li id="professions"><b>曾经的职业：</b>程序员、董秘、投资人、COO</li>
+					<li id="personalities"><b>性格标签：</b>骄傲的90后、热情的白羊座加上深邃的上升天蝎、真诚直率、超级典型的山东人。</li>
 					<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 
-					<li><b>最骄傲的事： </b>
+					<li><b id="theproud">最骄傲的事： </b>
 						<ul>
-							<li>虽然换了很多次职业方向，但是基本每个工作在1-2年内必然会升值/加薪</li>
-							<li>去过印度读书，并且在疫情期间做了很多贡献</li>
-							<li>一直有机会在不断创业和折腾，前路一直有小伙伴陪伴</li>
-							<li>心态好，思路开拓</li>
+							<li id="pruud1">虽然换了很多次职业方向，但是基本每个工作在1-2年内必然会升值/加薪</li>
+							<li id="pruud2">去过印度读书，并且在疫情期间做了很多贡献</li>
+							<li id="pruud3">一直有机会在不断创业和折腾，前路一直有小伙伴陪伴</li>
+							<li id="pruud4">心态好，思路开拓</li>
 
 						</ul>
 					</li>
-					<li><b>价值观与人生信条：</b>
+					<li><b id="belief">价值观与人生信条：</b>
 						<ul>
-							<li>但行好事，莫问前程</li>
-							<li>不死就折腾</li>
-							<li>怕啥，先干起来再说，大不了就是失败嘛</li>
-							<li>如果你融入不了别人的圈子，就自己造一个圈子</li>
-							<li>不要排斥认识骗子，骗子可以认识靠谱的人，靠谱的人可以认识骗子</li>
-							<li>真诚是最大的套路</li>
+							<li id="belief1">但行好事，莫问前程</li>
+							<li id="belief2">不死就折腾</li>
+							<li id="belief3">怕啥，先干起来再说，大不了就是失败嘛</li>
+							<li id="belief4">如果你融入不了别人的圈子，就自己造一个圈子</li>
+							<li id="belief5">不要排斥认识骗子，骗子可以认识靠谱的人，靠谱的人可以认识骗子</li>
+							<li id="belief6">真诚是最大的套路</li>
 						</ul>
 						</ol>
 				</ul>
@@ -102,77 +108,101 @@
 			</article>
 			<!-- Reading -->
 			<article id="readinglist">
-				<h2 class="major">一些推荐</h2>
+				<h2 class="major"  id="recommnedlist_title">一些推荐</h2>
 
-				<h3>读书清单 </h3>
+				<h3  id="readinglist">读书清单 </h3>
 				<ul>
 					<li>
-						<b>科技：</b>
+						<b  id="book_tech">科技：</b>
+						<div  id="book_tech_details"></div>
 					</li>
 					<li>
-						<b>传记：</b>《乔布斯传》、《我曾走在崩溃的边缘》、
+						<b  id="book_biography">传记：</b>
+						<div  id="book_biography_details">《乔布斯传》、《我曾走在崩溃的边缘》、</div>
 					</li>
 					<li>
-						<b>金融：</b>《货币战争》
+						<b  id="book_finance">金融：</b>
+						<div id="book_finance_details">《货币战争》</div>
 					</li>
 					
 					<li>
-						<b>历史、社会和哲学：</b>《悉达多》、《毛主席语录》、《明朝那些事儿》
+						<b  id="book_history">历史、社会和哲学：</b>
+						<div id="book_history_details">《悉达多》、《毛主席语录》、《明朝那些事儿》</div>
 					</li>
 					<li>
-						<b>其他：</b>《置身事内：中国政府与经济发展》、《主权个人》
+						<b id="book_otherreading">其他：</b>
+						<div id="book_otherreading_details">《置身事内：中国政府与经济发展》、《主权个人》</div>
 					</li>
 				</ul>
 				<br/>
 
 
-				<h3>电影推荐</h3>
+				<h3 id="movive">电影推荐</h3>
 				<ul>
 				
 					<li>
-						<b>社会/故事/剧情片：</b>
-						《小丑》、《让子弹飞》、《霸王别姬》、《高山上的花环》、《牧马人》
+						<b id="movie_social">社会/故事/剧情片：</b>
+					<div id="movie_social_details">	《小丑》、《让子弹飞》、《霸王别姬》、《高山上的花环》、《牧马人》
+					</div>
 					</li>
 					
 					<li>
-						<b>喜剧：</b>《夏洛特烦恼》、《扬名立万》、《疯狂的石头》、《疯狂的赛车》、《心花怒放》、
-					</li>
+						<b id="comedy">喜剧：</b>
+						<div id="movie_comedy_details">
+							《夏洛特烦恼》、《扬名立万》、《疯狂的石头》、《疯狂的赛车》、《心花怒放》、
+					</div>
+						</li>
 					<li>
-						<b>其他：</b>《楚门的世界》
+						<b id="movie_other">其他：</b>
+						<div id="movie_other_details">《楚门的世界》</div>
 					</li>
 				</ul>
 				<br/>
 
-				<h3>电视剧推荐 </h3>
+				<h3 id="tv">电视剧推荐 </h3>
 				<ul>
 				
 					<li>
-						<b>历史（含改编）：</b>
+						<b id="tv_history">历史（含改编）：</b>
+						<div id="tv_hisotry_details">
 						《走向共和》、《汉武大帝》、《大风歌》、《楚汉争雄》、《太平天国》、
 						《新三国》、《少帅》、《雍正王朝》
+						</div>
 					</li>
 					<li>
-						<b>战争：</b>《我的团长我的团》、《亮剑》、《解放》、《人间正道是沧桑》
-					</li>
+						<b id="tv_war">战争：</b>
+						<div id="tv_war_details">
+							《我的团长我的团》、《亮剑》、《解放》、《人间正道是沧桑》
+					</div>
+						</li>
 					<li>
-						<b>年代剧：</b>
+						<b id="tv_period">年代剧：</b>
+						<div id="tv_period_details">
 						《老酒馆》、《天下第一楼》、《老农民》、《茶馆》
+					</div>
 					</li>
 					<li>
-						<b>纪录片：</b>
+						<b id="tv_documentary">纪录片：</b>
+						<div id="tv_documentary_details">
 						《差馆》、《守护解放西》、《国家地理》、《舌尖上的中国》
+					</div>
 					</li>
 					<li>
-						<b>谍战：</b>
-						《风筝》、《潜伏》
+						<b id="tv_spy">谍战：</b>
+					<div id="spy_details">	《风筝》、《潜伏》
+						</div>
 					</li>
 					<li>
-						<b>刑侦和侦探类：</b>
-						《白夜追凶》、《神探狄仁杰》、《大宋提刑官》
-					</li>
+						<b id="tv_criminal">刑侦和侦探类：</b>
+						<div id="tv_criminal_details">
+							《白夜追凶》、《神探狄仁杰》、《大宋提刑官》
+					</div>
+						</li>
 					<li>
-						<b>其他：</b>
+						<b id="tv_others">其他：</b>
+					<div id="tv_others_details">	
 						《琅琊榜1和2》
+						</div>
 					</li>
 				</ul>
 			
@@ -182,56 +212,55 @@
 			</article>
 			<!-- About -->
 			<article id="sharing">
-				<h2 class="major">一些分享</h2>
+				<h2 class="major" id="sharing_title">一些分享</h2>
 				<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
 				<p>
-				<h3>观点文章</h3>
+				<h3 id="key_points">观点文章</h3>
 
 				<ul>
-					<li><a href="https://mp.weixin.qq.com/s/yRAphxCu4rFsLEjehJyK6A">投资方法论 | 投资逻辑脑图-投资人究竟是怎么看项目的？</a>
+					<li><a href="https://mp.weixin.qq.com/s/yRAphxCu4rFsLEjehJyK6A" id="article1">投资方法论 | 投资逻辑脑图-投资人究竟是怎么看项目的？</a>
 					</li>
-					<li><a href="https://mp.weixin.qq.com/s/rQMjdqCqWFlGETH0G-0x5A">“脏活累活”与硬科技</a></li>
-					<li><a href="https://mp.weixin.qq.com/s/i5Zf7s-oDMpXantd5nFjKg">胡说八道｜记一场关于“印度崛起”的小辩论</a></li>
-					<li><a href="https://mp.weixin.qq.com/s/6FnsUTn9NDeXeZ7Rf29diA">2020年，我做了一个关于印度的PPT</a></li>
-					<li><a href="https://mp.weixin.qq.com/s/PoFoolCG0vSvr1P3EktfaA">软件最终的形态 — “Be Paper”</a></li>
-					<li><a href="https://mp.weixin.qq.com/s/L81qpEUWbCrs6-PrYxSH6Q">沙特的改革开放之路——《VISION 2030》</a></li>
-					<li><a href="https://mp.weixin.qq.com/s/cKCRcZrn9v_R5TKP0fodZA">中国的AI企业现状：聚光灯下的「高科技施工队」</a></li>
-					<li><a href="https://mp.weixin.qq.com/s/6-oj-8v9TYi8ZphUgDWjqA">从L0到L3：一个文科生对于「生成式AI」的四层技术体系的解读</a>
+					<li><a href="https://mp.weixin.qq.com/s/rQMjdqCqWFlGETH0G-0x5A"  id="article2">“脏活累活”与硬科技</a></li>
+					<li><a href="https://mp.weixin.qq.com/s/i5Zf7s-oDMpXantd5nFjKg"  id="article3">胡说八道｜记一场关于“印度崛起”的小辩论</a></li>
+					<li><a href="https://mp.weixin.qq.com/s/6FnsUTn9NDeXeZ7Rf29diA"  id="article4">2020年，我做了一个关于印度的PPT</a></li>
+					<li><a href="https://mp.weixin.qq.com/s/PoFoolCG0vSvr1P3EktfaA"  id="article5">软件最终的形态 — “Be Paper”</a></li>
+					<li><a href="https://mp.weixin.qq.com/s/L81qpEUWbCrs6-PrYxSH6Q"  id="article5">沙特的改革开放之路——《VISION 2030》</a></li>
+					<li><a href="https://mp.weixin.qq.com/s/cKCRcZrn9v_R5TKP0fodZA"  id="article6">中国的AI企业现状：聚光灯下的「高科技施工队」</a></li>
+					<li><a href="https://mp.weixin.qq.com/s/6-oj-8v9TYi8ZphUgDWjqA"  id="article7">从L0到L3：一个文科生对于「生成式AI」的四层技术体系的解读</a>
 					</li>
-					<li><a href="https://mp.weixin.qq.com/s/a_935PnzLuZ1XsSeAy-u2A">一些关于智能算力的科普和分享</a></li>
-					<li><a href="https://mp.weixin.qq.com/s/eT5wldKRPHqlCjNxvSWoKw">在传销组织学习的一天：POS机套现的经济模型和商业逻辑
+					<li><a href="https://mp.weixin.qq.com/s/a_935PnzLuZ1XsSeAy-u2A"  id="article8">一些关于智能算力的科普和分享</a></li>
+					<li><a href="https://mp.weixin.qq.com/s/eT5wldKRPHqlCjNxvSWoKw"  id="article9">在传销组织学习的一天：POS机套现的经济模型和商业逻辑
 
-					<li><a href="https://mp.weixin.qq.com/s/u_B6-22Tl9ZVFMepkv0cXg">就不写代码 |
+					<li><a href="https://mp.weixin.qq.com/s/u_B6-22Tl9ZVFMepkv0cXg"  id="article10">就不写代码 |
 							花一天时间打造一个[个人网站]+[大模型助手]</a></li>
 
 				</ul>
-				<h3>有意义的ppt分享</h3>
+				<h3  id="ppt_sharing">有意义的ppt分享</h3>
 
 				<ul>
-					<li><a href="https://pan.baidu.com/s/1NDleTU5muvmEzRBrIFF8MQ?pwd=3u5w">未来世界：Web3.0</a></li>
-					<li><a href="https://pan.baidu.com/s/1axNyWFhYHU7YhwiedPAywg?pwd=cnvn">创业者如何与投资人沟通</a></li>
-					<li><a href="https://docs.qq.com/mind/DVFpIanhmZ2VJZUl5">项目决策脑图</a></li>
-					<li><a href="https://pan.baidu.com/s/12ApFlXAsXhYldo0ZzSzxtg?pwd=mrq1">印度行记</a></li>
+					<li><a href="https://pan.baidu.com/s/1NDleTU5muvmEzRBrIFF8MQ?pwd=3u5w" id="ppt_sharing1">未来世界：Web3.0</a></li>
+					<li><a href="https://pan.baidu.com/s/1axNyWFhYHU7YhwiedPAywg?pwd=cnvn" id="ppt_sharing2">创业者如何与投资人沟通</a></li>
+					<li><a href="https://docs.qq.com/mind/DVFpIanhmZ2VJZUl5" id="ppt_sharing3">项目决策脑图</a></li>
+					<li><a href="https://pan.baidu.com/s/12ApFlXAsXhYldo0ZzSzxtg?pwd=mrq1" id="ppt_sharing4">印度行记</a></li>
 				</ul>
 				</p>
+				<h3 id="chinese painting">国画</h3>
+				<ul>
+					<li><a href="https://www.facebook.com/ChinesePainting123" id="more_details">展开内容</a></li>
+				</ul>
 
 			</article>
 
-			<!-- Art -->
-			<article id="arta">
-				<h2 class="major">(伪)文艺</h2>
-
-				内容后续会上线，乖，让我懒一会再说。。别急
-			</article>
+		
 
 			<!-- Contact -->
 			<article id="contact">
-				<h2 class="major">联系我</h2>
+				<h2 class="major" id="Contact">联系我</h2>
 				<ul>
-					<li><b>日常活动地区:</b>北京、上海、杭州、无锡、新加坡<br><br></li>
-					<li><b>个人邮件：</b>fchen2020@163.com<br><br></li>
-					<li><b> 个人微信号：</b>frankfika<br><br></li>
-					<li><b> 微信公众账号：</b>
+					<li id="place_active"><b>日常活动地区:</b>北京、上海、杭州、无锡、新加坡<br><br></li>
+					<li id="email"><b>个人邮件：</b>fchen2020@163.com<br><br></li>
+					<li id="personal_wechat"><b> 个人微信号：</b>frankfika<br><br></li>
+					<li><b id="wechat_public"> 微信公众账号：</b>
 						<span class="image main">
 							<img src="images/wechat_public.png" alt=""
 								style="max-width: 100%; height: auto; width: auto; max-height: 200px;" />
@@ -244,10 +273,10 @@
 				</ul>
 
 				<ul class="icons">
-					<b>其他联系方式：</b><span><span>
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-telegram"><span class="label">Telegram</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<b id="other_contact">其他联系方式：</b><span><span>
+							<li><a href="#" class="icon fa-twitter"><span class="label" id="twitter">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-telegram"><span class="label" id="telegram">Telegram</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label" id="github">GitHub</span></a></li>
 				</ul>
 			</article>
 		</div>
@@ -261,7 +290,6 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
 	<style>
 		.copyrights {
 			text-indent: -9999px;
@@ -278,6 +306,8 @@
 	</script>
 	<script src="https://udify.app/embed.min.js" id="dIH8WeL3u5b6mRay" defer>
 	</script>
+	    <script src="assets/js/toggleLanguage.js"></script>
+
 
 </body>
 

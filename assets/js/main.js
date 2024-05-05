@@ -45,7 +45,7 @@
 					if ($wrapper.prop('scrollHeight') > $window.height())
 						$wrapper.css('height', 'auto');
 					else
-						$wrapper.css('height', '100vh');
+						$wrapper.css('height', '70vh');
 
 				}, 250);
 
