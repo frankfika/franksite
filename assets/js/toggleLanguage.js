@@ -1,6 +1,6 @@
 var texts = {
     zh: {
-        languageButton:"English",
+        languageButton: "English",
         helloworld: 'Hello World!',
         introduction: "Hej,我是弗兰克（Frank）,一个<a>工程师</a>、<a>投资人</a>、或者<a> Whatever</a><br/>如果你恰好来到我的base地，恰好你也无聊，可以来我找请你喝杯茶~",
         aboutme_title: "关于我",
@@ -83,7 +83,7 @@ var texts = {
     }
     ,
     en: {
-        languageButton:"中文",
+        languageButton: "中文",
         helloworld: 'Hello World!',
         introduction: "Hi, I am Frank, an <a>engineer</a>, <a>investor</a>, or <a>whatever</a><br/>If you happen to come to my base and you are also bored, come find me and I'll treat you to a cup of tea~",
         aboutme_title: "About Me",
@@ -167,13 +167,13 @@ var texts = {
 
 
 };
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Set the initial language on page load
     var initialLang = document.documentElement.lang;  // This will be 'zh' as per the HTML lang attribute
     toggleLanguage(initialLang, true); // Preload the language based on the 'zh' attribute
 
     // Attach the event listener for subsequent toggles
-    document.getElementById('languageButton').addEventListener('click', function() {
+    document.getElementById('languageButton').addEventListener('click', function () {
         toggleLanguage(document.documentElement.lang === 'zh' ? 'en' : 'zh', false);
     });
 });
@@ -187,7 +187,7 @@ function toggleLanguage(lang, isInitialLoad) {
 
     // Update all text content based on the current language
     var contentKeys = Object.keys(texts[lang]);
-    contentKeys.forEach(function(key) {
+    contentKeys.forEach(function (key) {
         var element = document.getElementById(key);
         if (element) {
             element.innerHTML = texts[lang][key];
