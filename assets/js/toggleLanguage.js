@@ -7,6 +7,11 @@ var texts = {
         recommnedlist_title: "一些推荐",
         sharing_title: "一些分享",
         contact_title: "联系我",
+        aboutme_title1: "关于我",
+        recommnedlist_title1: "一些推荐",
+        sharing_title1: "一些分享",
+        contact_title1: "联系我",
+
         intro_details: "Hej，大家好~我名叫Frank，我的真实姓名就留个悬念，反正它和我的英文名音近（为了图省事）。",
         constellation: "星座：白羊座",
         hometown: "家乡：山东青岛市",
@@ -79,7 +84,12 @@ var texts = {
         wechat_public: "微信公众账号",
         twitter: "Twitter",
         telegram: "Telegram",
-        github: "GitHub"
+        github: "GitHub",
+        key_points:"观点文章",
+        ppt_sharing:"PPT分享",
+        chinese_painting:"国画",
+        movive:"电影",
+        tv:"电视剧"
     }
     ,
     en: {
@@ -90,6 +100,12 @@ var texts = {
         recommnedlist_title: "Recommend",
         sharing_title: "Share",
         contact_title: "Contact Me",
+
+        aboutme_title1: "About Me",
+        recommnedlist_title1: "Recommend",
+        sharing_title1: "Share",
+        contact_title1: "Contact Me",
+
         intro_details: "Hi, everyone~ My name is Frank. I'll keep my real name a mystery; it sounds similar to my English name (for convenience).",
         constellation: "Zodiac: Aries",
         hometown: "Hometown: Qingdao, Shandong",
@@ -162,7 +178,12 @@ var texts = {
         wechat_public: "WeChat Public Account",
         twitter: "Twitter",
         telegram: "Telegram",
-        github: "GitHub"
+        github: "GitHub",
+        key_points: "Key Points Article",
+        ppt_sharing: "PPT Sharing",
+        chinese_painting: "Chinese Painting",
+        movive: "Movie",
+        tv: "TV Series"
     }
 
 
