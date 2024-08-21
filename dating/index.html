@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- Head -->
+
+<head>
+	<title>Home</title>
+	<!-- Meta-Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--Style-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<!--Font-awesome-icons -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!--Google-fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600,700&display=swap"
+		rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<style>
+			#content {
+				display: none;
+			}
+			#password-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				background-color: #f5f5f5;
+				text-align: center;
+			}
+			#password-input {
+				padding: 10px;
+				font-size: 16px;
+				margin-bottom: 20px;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+			}
+			#submit-password {
+				padding: 10px 20px;
+				font-size: 16px;
+				border: none;
+				border-radius: 5px;
+				background-color: #4CAF50;
+				color: white;
+				cursor: pointer;
+			}
+			#submit-password:hover {
+				background-color: #45a049;
+			}
+		</style> 
+
+	</head>
+<!-- //Head -->
+<!-- Body -->
+
+<body>
+	<div id="password-container">
+		<h1>请输入密码</h1>
+		<input type="password" id="password-input" placeholder="Enter Password">
+		<button id="submit-password">提交</button>
+	</div>
+	<div id="content">
+	<section class="w3l-coming-soon-page">
+		<div class="coming-page-infohny">
+			<div class="wrapper">
+				<div class="header">
+					<div class="logo">
+						<a class="brand-logo" href="index.html">Love</a>
+					</div>
+					<div class="w3lhny-button text-right">
+						<a class="alive-btn" href="https://pan.baidu.com/s/1UgPwPKcsGr7EBq9t0MZ5NA?pwd=0731">我们的记忆</a>
+					</div>
+				</div>
+				<div class="coming-block">
+					<h1>最好的时光，最爱的你</h1>
+					<h2 class="parahny">我们的故事开始于 ｜ 2024年7月31日 ｜ ... </h2>
+
+				</div>
+				<div class="alive-bottom">
+				
+					<div class="countdown">
+						<h6>我们已经认识了：</h6>
+						<div class="countdown__days">
+							<div class="number"></div>
+							<span class>天</span>
+						</div>
+
+						<div class="countdown__hours">
+							<div class="number"></div>
+							<span class>小时</span>
+						</div>
+
+						<div class="countdown__minutes">
+							<div class="number"></div>
+							<span class>分钟</span>
+						</div>
+
+						<div class="countdown__seconds">
+							<div class="number"></div>
+							<span class>秒</span>
+						</div>
+					</div>
+
+
+					<div class="copyright-footer ">
+
+						<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=2124381474&auto=1&height=32"></iframe>
+
+						</div>
+						<!-- <p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script>
+			(() => {
+				// Specify the deadline date
+				const deadlineDate = new Date('July 31, 2024 23:59:59').getTime();
+
+				// Cache all countdown boxes into consts
+				const countdownDays = document.querySelector('.countdown__days .number');
+				const countdownHours = document.querySelector('.countdown__hours .number');
+				const countdownMinutes = document.querySelector('.countdown__minutes .number');
+				const countdownSeconds = document.querySelector('.countdown__seconds .number');
+
+				// Update the count down every 1 second (1000 milliseconds)
+				setInterval(() => {
+					// Get current date and time
+					const currentDate = new Date().getTime();
+
+					// Calculate the distance between current date and time and the deadline date and time
+					const distance = currentDate - deadlineDate;
+
+					// Calculations the data for remaining days, hours, minutes and seconds
+					const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Insert the result data into individual countdown boxes
+					countdownDays.innerHTML = days;
+					countdownHours.innerHTML = hours;
+					countdownMinutes.innerHTML = minutes;
+					countdownSeconds.innerHTML = seconds;
+				}, 1000);
+			})();
+		</script>
+
+	</section>
+</div>
+	<!-- //coming-61-w3l-vv-section -->
+	<script>
+		document.getElementById('submit-password').addEventListener('click', function() {
+			var password = document.getElementById('password-input').value;
+			if (password === '0731') {  // 替换为你的实际密码
+				document.getElementById('password-container').style.display = 'none';
+				document.getElementById('content').style.display = 'block';
+			} else {
+				alert('密码错误，请重试。');
+			}
+		});
+	
+		// 确保页面加载时隐藏内容
+		document.addEventListener("DOMContentLoaded", function() {
+			document.getElementById('content').style.display = 'none';
+		});
+	</script>
+</body>
+<!-- //Body -->
+
+</html>
